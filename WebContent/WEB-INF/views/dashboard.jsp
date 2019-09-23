@@ -95,9 +95,7 @@
 		
 		
 		<h1>Your notes<span class="badge badge-secondary">HeadNote</span></h1>
-		
-		<form class="container" action="Dashboard.jsp">
-		</form>
+	
 		
 		<% 
 		for (Note note : notes){ %>	

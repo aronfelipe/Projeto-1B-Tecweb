@@ -23,11 +23,14 @@ public class DAO {
 			e.printStackTrace();
 		}
 		try {
-			String url = System.getenv("mysql_url");
-			String user = System.getenv("mysql_user");
-			String password = System.getenv("mysql_password");
+			//String url = System.getenv("mysql_url");
+			//String user = System.getenv("mysql_user");
+			//String password = System.getenv("mysql_password");
+			//connection = DriverManager.getConnection(
+			//		url, user, password);
+			
 			connection = DriverManager.getConnection(
-					url, user, password);
+					"jdbc:mysql://localhost/proj", "root", "3412");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
